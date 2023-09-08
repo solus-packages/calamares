@@ -1,0 +1,67 @@
+name       : calamares
+version    : 3.2.62
+release    : 1
+source     :
+    - https://github.com/calamares/calamares/releases/download/v3.2.62/calamares-3.2.62.tar.gz : a0fbcec2a438693753fc174220356119ad7adb8a2b19c317518aa1cb025d6dd0
+license    : GPL-2.0-or-later # CHECK ME
+component  : system
+summary    : Distribution-independent installer framework
+description: |
+    Calamares is a distribution-independent system installer, with an advanced partitioning feature for both manual and automated partitioning operations. Calamares is designed to be customizable by distribution maintainers without the need for cumbersome patching, thanks to third-party branding and external modules support.
+builddeps  :
+    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt5Quick)
+    - pkgconfig(Qt5UiTools)
+    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt5WebEngineWidgets)
+    - pkgconfig(icu-i18n)
+    - pkgconfig(libparted)
+    - pkgconfig(pwquality)
+    - pkgconfig(polkit-qt5-1)
+    - pkgconfig(python3)
+    - pkgconfig(yaml-cpp)
+    - extra-cmake-modules
+    - kconfig-devel
+    - kcoreaddons-devel
+    - kcrash-devel
+    - kdbusaddons-devel
+    - ki18n-devel
+    - kpackage-devel
+    - kparts-devel
+    - kpmcore-devel
+    - kwidgetsaddons-devel
+    - libboost-devel
+    - plasma-framework-devel
+    - python-jsonschema
+rundeps    :
+    - qt5-quickcontrols2
+    - rsync
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
+    # FIXME: Calamares supports stateless paths
+    install -Dm00644 $pkgfiles/settings.conf $installdir/etc/calamares/settings.conf
+    install -Dm00644 $pkgfiles/unpackfs.conf $installdir/etc/calamares/modules/unpackfs.conf
+    install -Dm00644 $pkgfiles/mount.conf $installdir/etc/calamares/modules/mount.conf
+    install -Dm00644 $pkgfiles/fstab.conf $installdir/etc/calamares/modules/fstab.conf
+    install -Dm00644 $pkgfiles/shellprocess_mountsquashfs.conf $installdir/etc/calamares/modules/shellprocess_mountsquashfs.conf
+    install -Dm00644 $pkgfiles/shellprocess_postinstall.conf $installdir/etc/calamares/modules/shellprocess_postinstall.conf
+    install -Dm00644 $pkgfiles/shellprocess_removeliveos.conf $installdir/etc/calamares/modules/shellprocess_removeliveos.conf
+    install -Dm00644 $pkgfiles/partition.conf $installdir/etc/calamares/modules/partition.conf
+    install -Dm00644 $pkgfiles/users.conf $installdir/etc/calamares/modules/users.conf
+    install -Dm00644 $pkgfiles/removeuser.conf $installdir/etc/calamares/modules/removeuser.conf
+    install -Dm00644 $pkgfiles/locale.conf $installdir/etc/calamares/modules/locale.conf
+    install -Dm00644 $pkgfiles/welcome.conf $installdir/etc/calamares/modules/welcome.conf
+    install -Dm00644 $pkgfiles/packagechooserq.conf $installdir/etc/calamares/modules/packagechooserq.conf
+    install -Dm00644 $pkgfiles/contextualprocess_packageoptions.conf $installdir/etc/calamares/modules/contextualprocess_packageoptions.conf
+
+    # Branding
+    install -dm00755 $pkgfiles/usr/share/calamares/branding/solus
+    for f in $pkgfiles/branding/*; do
+        if [[ -f "$f" ]]; then
+            install -Dm00644 "$f" "$installdir/etc/calamares/branding/solus/$(basename $f)"
+        fi
+    done
