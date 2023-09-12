@@ -170,6 +170,15 @@
             <Path fileType="data">/usr/share/calamares/branding/default/stylesheet.qss</Path>
             <Path fileType="data">/usr/share/calamares/branding/solus/branding.desc</Path>
             <Path fileType="data">/usr/share/calamares/branding/solus/show.qml</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/slide-budgie.png</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/slide-gnome.png</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/slide-laptop.png</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/slide-mate-representation.png</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/slide-mate.png</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/slide-plasma.png</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/solus-icon.png</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/solus-logo.png</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/solus-welcome.png</Path>
             <Path fileType="data">/usr/share/calamares/branding/solus/stylesheet.qss</Path>
             <Path fileType="data">/usr/share/calamares/modules/contextualprocess_packageoptions.conf</Path>
             <Path fileType="data">/usr/share/calamares/modules/fstab.conf</Path>
