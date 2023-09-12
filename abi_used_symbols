@@ -1038,9 +1038,6 @@ libQt5Svg.so.5:_ZN12QSvgRenderer6renderEP8QPainter
 libQt5Svg.so.5:_ZN12QSvgRendererC1ERK7QStringP7QObject
 libQt5Svg.so.5:_ZN12QSvgRendererD1Ev
 libQt5Svg.so.5:_ZNK12QSvgRenderer11defaultSizeEv
-libQt5WebEngine.so.5:_ZN11QtWebEngine10initializeEv
-libQt5WebEngineWidgets.so.5:_ZN14QWebEngineView4loadERK4QUrl
-libQt5WebEngineWidgets.so.5:_ZN14QWebEngineViewC1EP7QWidget
 libQt5Widgets.so.5:_ZN10QBoxLayout10addSpacingEi
 libQt5Widgets.so.5:_ZN10QBoxLayout10addStretchEi
 libQt5Widgets.so.5:_ZN10QBoxLayout10setSpacingEi

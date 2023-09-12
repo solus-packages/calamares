@@ -2,8 +2,8 @@
     <Source>
         <Name>calamares</Name>
         <Packager>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>Evan Maddock</Name>
+            <Email>maddock.evan@vivaldi.net</Email>
         </Packager>
         <License>GPL-2.0-or-later</License>
         <PartOf>system</PartOf>
@@ -19,32 +19,6 @@
 </Description>
         <PartOf>system</PartOf>
         <Files>
-            <Path fileType="config">/etc/calamares/branding/solus/branding.desc</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/show.qml</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/slide-budgie.png</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/slide-gnome.png</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/slide-laptop.png</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/slide-mate-representation.png</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/slide-mate.png</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/slide-plasma.png</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/solus-icon.png</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/solus-logo.png</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/solus-welcome.png</Path>
-            <Path fileType="config">/etc/calamares/branding/solus/stylesheet.qss</Path>
-            <Path fileType="config">/etc/calamares/modules/contextualprocess_packageoptions.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/fstab.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/locale.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/mount.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/packagechooserq.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/partition.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/removeuser.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/shellprocess_mountsquashfs.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/shellprocess_postinstall.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/shellprocess_removeliveos.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/unpackfs.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/users.conf</Path>
-            <Path fileType="config">/etc/calamares/modules/welcome.conf</Path>
-            <Path fileType="config">/etc/calamares/settings.conf</Path>
             <Path fileType="executable">/usr/bin/calamares</Path>
             <Path fileType="library">/usr/lib64/calamares/libcalamares.so</Path>
             <Path fileType="library">/usr/lib64/calamares/modules/bootloader/bootloader.schema.yaml</Path>
@@ -171,8 +145,6 @@
             <Path fileType="library">/usr/lib64/calamares/modules/users/module.desc</Path>
             <Path fileType="library">/usr/lib64/calamares/modules/usersq/libcalamares_viewmodule_usersq.so</Path>
             <Path fileType="library">/usr/lib64/calamares/modules/usersq/module.desc</Path>
-            <Path fileType="library">/usr/lib64/calamares/modules/webview/libcalamares_viewmodule_webview.so</Path>
-            <Path fileType="library">/usr/lib64/calamares/modules/webview/module.desc</Path>
             <Path fileType="library">/usr/lib64/calamares/modules/welcome/libcalamares_viewmodule_welcome.so</Path>
             <Path fileType="library">/usr/lib64/calamares/modules/welcome/module.desc</Path>
             <Path fileType="library">/usr/lib64/calamares/modules/welcomeq/libcalamares_viewmodule_welcomeq.so</Path>
@@ -196,6 +168,22 @@
             <Path fileType="data">/usr/share/calamares/branding/default/squid.png</Path>
             <Path fileType="data">/usr/share/calamares/branding/default/squid.png.license</Path>
             <Path fileType="data">/usr/share/calamares/branding/default/stylesheet.qss</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/branding.desc</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/show.qml</Path>
+            <Path fileType="data">/usr/share/calamares/branding/solus/stylesheet.qss</Path>
+            <Path fileType="data">/usr/share/calamares/modules/contextualprocess_packageoptions.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/fstab.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/locale.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/mount.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/packagechooserq.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/partition.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/removeuser.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/shellprocess_mountsquashfs.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/shellprocess_postinstall.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/shellprocess_removeliveos.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/unpackfs.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/users.conf</Path>
+            <Path fileType="data">/usr/share/calamares/modules/welcome.conf</Path>
             <Path fileType="data">/usr/share/calamares/qml/calamares/slideshow/BackButton.qml</Path>
             <Path fileType="data">/usr/share/calamares/qml/calamares/slideshow/ForwardButton.qml</Path>
             <Path fileType="data">/usr/share/calamares/qml/calamares/slideshow/NavButton.qml</Path>
@@ -204,6 +192,7 @@
             <Path fileType="data">/usr/share/calamares/qml/calamares/slideshow/SlideCounter.qml</Path>
             <Path fileType="data">/usr/share/calamares/qml/calamares/slideshow/qmldir</Path>
             <Path fileType="data">/usr/share/calamares/qml/calamares/slideshow/qmldir.license</Path>
+            <Path fileType="data">/usr/share/calamares/settings.conf</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/calamares.svg</Path>
             <Path fileType="localedata">/usr/share/locale/ar/LC_MESSAGES/calamares-python.mo</Path>
             <Path fileType="localedata">/usr/share/locale/as/LC_MESSAGES/calamares-python.mo</Path>
@@ -397,11 +386,11 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2023-07-01</Date>
+            <Date>2023-09-12</Date>
             <Version>3.2.62</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>Evan Maddock</Name>
+            <Email>maddock.evan@vivaldi.net</Email>
         </Update>
     </History>
 </PISI>

@@ -35,7 +35,6 @@ libcalamares_viewmodule_summaryq.so
 libcalamares_viewmodule_tracking.so
 libcalamares_viewmodule_users.so
 libcalamares_viewmodule_usersq.so
-libcalamares_viewmodule_webview.so
 libcalamares_viewmodule_welcome.so
 libcalamares_viewmodule_welcomeq.so
 libcalamaresui.so.3.2.62
